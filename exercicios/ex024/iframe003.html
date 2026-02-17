@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat atque quis culpa, rem fugiat assumenda. Iste autem minima exercitationem repellat reiciendis, laborum omnis! Veniam dignissimos ut quod animi dolor non?</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda Página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur et vitae quia alias deleniti, recusandae eligendi quas facilis tenetur iure. Animi laudantium beatae adipisci ullam iure, perspiciatis aliquid incidunt praesentium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore tempora aliquam animi debitis impedit a perferendis id veritatis necessitatibus deserunt ratione minima consectetur nihil iusto, ullam qui nesciunt facere accusamus!</p>
+
+    <iframe srcdoc="<h1> Escolha uma das opções acima! <h1>" id="tela" name="frame">
+        <p>Infelizmente seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis et exercitationem sed quasi repellendus sequi unde! Labore, atque provident similique inventore deserunt nemo consequatur! Aliquam ipsam ratione dolores doloribus magnam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas eaque molestias necessitatibus in. Quod aliquam optio exercitationem a, eius quia cum earum quibusdam molestias iusto velit, sint rerum, vero animi!</p>
+</body>
+</html>
