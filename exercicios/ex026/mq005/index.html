@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu ()">menu</i>
+
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias repellendus distinctio rem ut commodi, explicabo magni qui nulla laborum dolor magnam rerum aliquam praesentium aut eligendi at adipisci excepturi vero! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere libero delectus, omnis minus pariatur ab aliquid quasi rerum eos quas sed, aspernatur fugit minima sint, vero ipsa. Dignissimos, perspiciatis error?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum deserunt maxime, nobis dolores fugiat quas doloremque libero ex labore culpa repellendus doloribus dolor neque maiores minus obcaecati nesciunt. Nesciunt, aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ducimus beatae, dolores obcaecati quod consequuntur, aperiam consequatur quas fuga debitis minus incidunt porro iure. Accusamus fuga a iste porro? Sit?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod magni deleniti dolor obcaecati. Dolor, consequuntur! Corrupti obcaecati, dicta, odit tenetur veritatis labore cupiditate saepe, ea id veniam nesciunt quo? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere voluptas at doloremque vel dolores ducimus in et iste officiis rerum, iusto saepe nobis, a aliquid odit culpa quaerat nemo consectetur.</p>
+
+        </article>
+    </main>
+
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
